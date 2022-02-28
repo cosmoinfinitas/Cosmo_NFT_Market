@@ -113,8 +113,8 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M96 48c0 26.51-21.49 48-48 48S0 74.51 0 48 21.49 0 48 0s48 21.49 48 48zM58.014 29.759L68.002 24 78 29.764l-.044.026v35.79l-9.941 5.727-.014.028-.018-.01-.025.015v-.03l-9.953-5.736v-12.74L47.99 58.566l-.008.005-.005-.013-9.98-5.75v12.76L28 71.329v-.043l-.006.046L18 65.569V29.758l.005.002L28.001 24l29.968 17.283.036-.005v-11.52h.009z"
                           fill="currentColor"
                         ></path>
@@ -131,9 +131,9 @@ export default function Home() {
                         stroke="currentColor"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                         />
                       </svg>
