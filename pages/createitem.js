@@ -10,7 +10,7 @@ import { nftaddress, nftmarketaddress } from "../config";
 import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
 import NFTMarket from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
 
-function createitem() {
+function Createitem() {
   const [fileUrl, setfileUrl] = useState(null);
   const [formInput, setformInput] = useState({
     price: "",
@@ -198,4 +198,4 @@ function createitem() {
     </div>
   );
 }
-export default createitem;
+export default Createitem;
