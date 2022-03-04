@@ -86,7 +86,7 @@ To get a local copy up and running follow these simple example steps.
       ```sh
     npm install
     ```
-4. Run the live server on your terminal
+4. Run the live server from your terminal
       ```sh
       npm run dev
     ```
