@@ -17,8 +17,8 @@
   </a>
 
 <h3 align="center">Cosmoinfinitas</h3>
-
-    <br>
+   <p align="center">
+    <br />
     <a href="https://github.com/cosmoinfinitas/Cosmoinfinitas-Landing-page"><strong>Explore the docs »</strong></a>
     <br />
     <br />
