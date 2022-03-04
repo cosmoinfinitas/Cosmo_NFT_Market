@@ -52,10 +52,12 @@ This is the Landing Page of this Project
 
 ### Built With
 
-* [HTML](https://www.w3schools.com/html/)
-* [CSS](https://www.w3schools.com/css/)
+* [NEXT JS](https://nextjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
 * [Javascript](https://www.javascript.com/)
-* [Bootstrap](https://getbootstrap.com/)
+* [Hardhat](https://hardhat.org/)
+* [Solidity](https://docs.soliditylang.org/en/v0.8.12/)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
