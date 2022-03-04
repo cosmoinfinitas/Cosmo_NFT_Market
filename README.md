@@ -98,7 +98,8 @@ To get a local copy up and running follow these simple example steps.
 * [Install Metamask Extension on your Browser](https://metamask.io/download/)
 * [Add Mumbai Testnet to your Wallet](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
 * [Add some Testnet MATIC from Faucet](https://faucet.polygon.technology/)
-* [Change .env.sample File to .env and populate it with your secrets]
+* [Change the name of .env.sample file to .env and populate it with your secrets]
+* [Create a Alchemy Account and Copy the Project ID to .env file you have created](https://www.alchemy.com/)
 
 
 1. Compile the Smart Contract (Remember to stay in the working Directory)
