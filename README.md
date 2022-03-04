@@ -76,12 +76,20 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/cosmoinfinitas/Cosmoinfinitas-Landing-page.git
+   git clone https://github.com/cosmoinfinitas/Cosmo_NFT_Market.git
    ```
-3. Install Bootstrap
+2. Change Directory
    ```sh
-    https://getbootstrap.com/
-   ```
+    cd Cosmo_NFT_Market
+    ```
+3. Install Dependencies
+      ```sh
+    npm install
+    ```
+4. Run the live server on your terminal
+      ```sh
+      npm run dev
+    ```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,7 +101,6 @@ To get a local copy up and running follow these simple example steps.
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
