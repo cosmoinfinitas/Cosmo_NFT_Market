@@ -79,69 +79,9 @@ function Createitem() {
   return (
     <div className="flex justify-center bg-black overflow-hidden">
       <div className="w-1/2 flex flex-col pb-12 ">
-        <div>
+      <div>
           <div className=" text-white font-extrabold text-4xl pb-6 pt-4">
             Create your own NFT
-          </div>
-        </div>
-        <div className=" w-96">
-          <div className="text-black font-extrabold pb-3">
-            <div className=" text-white">Name</div>
-            <input
-              placeholder="Name of the Asset"
-              className="mt-2 border rounded px-64 py-4"
-              onChange={(e) =>
-                setformInput({ ...formInput, name: e.target.value })
-              }
-            />
-          </div>
-        </div>
-
-        <div>
-          <div className="text-black font-extrabold">
-            <div className=" text-white"> Description </div>
-            <textarea
-              placeholder="Description of the item"
-              className="mt-2 border rounded px-64 pt-7 text-"
-              onChange={(e) =>
-                setformInput({ ...formInput, description: e.target.value })
-              }
-            />
-          </div>
-        </div>
-
-        <div className=" text-black pt-3 font-extrabold flex float-left">
-          <div className="flex justify-center pb-3">
-            <div className="mb-3 xl:w-96">
-              <div className=" text-white"> Price</div>
-              <input
-                className="mt-2 border rounded p-4 w-fit"
-                placeholder="Enter price for one piece"
-                onChange={(e) =>
-                  setformInput({ ...formInput, price: e.target.value })
-                }
-              />
-              <select
-                className="form-select
-                    text-base
-                    font-normal
-                    text-white
-                    bg-black bg-clip-padding bg-no-repeat
-                    pl-5
-                    border-none
-                    rounded
-                    transition
-                    ease-in-out
-                    m-0
-                    focus:text-white focus:bg-black focus:outline-none"
-                aria-label="Default select example"
-              >
-                <option selected>MATIC </option>
-                <option value="1">ETH</option>
-                <option value="2">WETH</option>
-                <option value="3">BNB</option>
-              </select>
-            </div>
           </div>
         </div>
         <div className="pt-3 flex float-left mr-60">
@@ -186,6 +126,68 @@ function Createitem() {
             )}
           </div>
         </div>
+        <div className=" w-96">
+          <div className="text-black font-extrabold pb-3">
+            <div className=" text-white">Name</div>
+            <input
+              placeholder="Name of the Asset"
+              className="mt-2 border rounded px-64 py-4"
+              onChange={(e) =>
+                setformInput({ ...formInput, name: e.target.value })
+              }
+            />
+          </div>
+        </div>
+
+        <div>
+          <div className="text-black my-10">
+            <div className=" text-white font-extrabold"> Description </div>
+            <div className="text-white">The description will be included on the item's detail page underneath its image.</div>
+            <textarea
+              placeholder="Description of the item"
+              className="mt-2 border rounded px-64 pt-7"
+              onChange={(e) =>
+                setformInput({ ...formInput, description: e.target.value })
+              }
+            />
+          </div>
+        </div>
+
+        <div className=" text-black pt-3 font-extrabold flex float-left">
+          <div className="flex justify-center pb-3">
+            <div className="mb-3 xl:w-96">
+              <div className=" text-white"> Price</div>
+              <input
+                className="mt-2 border rounded p-4 w-fit"
+                placeholder="Enter price for one piece"
+                onChange={(e) =>
+                  setformInput({ ...formInput, price: e.target.value })
+                }
+              />
+              <select
+                className="form-select
+                    text-base
+                    font-normal
+                    text-white
+                    bg-black bg-clip-padding bg-no-repeat
+                    pl-5
+                    border-none
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-white focus:bg-black focus:outline-none"
+                aria-label="Default select example"
+              >
+                <option selected>MATIC </option>
+                <option value="1">ETH</option>
+                <option value="2">WETH</option>
+                <option value="3">BNB</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <div className="pt-5">
           <button
             onClick={createMarket}
