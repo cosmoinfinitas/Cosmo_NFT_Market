@@ -27,7 +27,7 @@ export default function CreatorDashboard() {
 		const signer = provider.getSigner();
 
 		const marketContract = new ethers.Contract(
-			nftmarket	address,
+			nftmarketaddress,
 			Market.abi,
 			signer
 		);
