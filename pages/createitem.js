@@ -79,19 +79,19 @@ function Createitem() {
   return (
     <div className="flex justify-center bg-black overflow-hidden">
       <div className="w-1/2 flex flex-col pb-12 ">
-      <div>
+        <div>
           <div className=" text-white font-extrabold text-4xl pb-6 pt-4">
             Create your own NFT
           </div>
         </div>
         <div className="pt-3 flex float-left mr-60">
-          <div className="rounded-lg shadow-xl bg-black lg:w-1/2">
+          <div className="flex-1 rounded-lg shadow-xl bg-black lg:w-1/2">
             <div className="m-4">
               <label className="inline-block mb-2 text-blue-500">
                 Upload Image(jpg,png,svg,jpeg,gif)
               </label>
               <div className="flex items-center justify-center w-full">
-                <label className="flex flex-col w-full h-32 border-4 border-dashed hover:bg-black hover:border-blue-300">
+                <label className="flex flex-col w-full h-32 border-2 rounded border-dashed hover:bg-black hover:border-blue-300">
                   <div className="flex flex-col items-center justify-center pt-7">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -126,10 +126,22 @@ function Createitem() {
             )}
           </div>
         </div>
+
+        {/* todo manage margin inside the box */}
         <div className=" w-96">
           <div className="text-black font-extrabold pb-3">
             <div className=" text-white">Name</div>
             <input
+              style={{
+                width: "40rem",
+                padding: "1rem",
+                background: "transparent",
+                border: "none",
+                outline: "none",
+                color: "whitesmoke",
+                borderBottom: "1px solid whitesmoke",
+                borderRadius: "0px",
+              }}
               placeholder="Name of the Asset"
               className="mt-2 border rounded px-64 py-4"
               onChange={(e) =>
@@ -139,11 +151,26 @@ function Createitem() {
           </div>
         </div>
 
+        {/* todo manage margin inside the box */}
         <div>
           <div className="text-black my-10">
             <div className=" text-white font-extrabold"> Description </div>
-            <div className="text-white">The description will be included on the item's detail page underneath its image.</div>
+            <div className="text-white">
+              The description will be included on the item's detail page
+              underneath its image.
+            </div>
             <textarea
+              rows={1}
+              style={{
+                width: "40rem",
+                padding: "1rem",
+                background: "transparent",
+                border: "none",
+                outline: "none",
+                color: "whitesmoke",
+                borderBottom: "1px solid whitesmoke",
+                borderRadius: "0px",
+              }}
               placeholder="Description of the item"
               className="mt-2 border rounded px-64 pt-7"
               onChange={(e) =>
@@ -157,15 +184,26 @@ function Createitem() {
           <div className="flex justify-center pb-3">
             <div className="mb-3 xl:w-96">
               <div className=" text-white"> Price</div>
-              <input
-                className="mt-2 border rounded p-4 w-fit"
-                placeholder="Enter price for one piece"
-                onChange={(e) =>
-                  setformInput({ ...formInput, price: e.target.value })
-                }
-              />
-              <select
-                className="form-select
+              <div style={{ borderBottom: "1px solid whitesmoke" }}>
+                <input
+                  type="number"
+                  style={{
+                    width: "18rem",
+                    background: "transparent",
+                    padding: "1rem",
+                    outline: "none",
+                    display: "inline-block",
+                    border: "none",
+                    color: "white",
+                  }}
+                  className="mt-2 border rounded p-4 w-fit"
+                  placeholder="Enter price for one piece"
+                  onChange={(e) =>
+                    setformInput({ ...formInput, price: e.target.value })
+                  }
+                />
+                <select
+                  className="form-select
                     text-base
                     font-normal
                     text-white
@@ -177,13 +215,14 @@ function Createitem() {
                     ease-in-out
                     m-0
                     focus:text-white focus:bg-black focus:outline-none"
-                aria-label="Default select example"
-              >
-                <option selected>MATIC </option>
-                <option value="1">ETH</option>
-                <option value="2">WETH</option>
-                <option value="3">BNB</option>
-              </select>
+                  aria-label="Default select example"
+                >
+                  <option selected>MATIC </option>
+                  <option value="1">ETH</option>
+                  <option value="2">WETH</option>
+                  <option value="3">BNB</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>

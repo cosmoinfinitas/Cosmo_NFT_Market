@@ -8,7 +8,7 @@ function Navbar() {
     <div className=" max-w-10xl mx-auto px-2 sm:px-6 lg:px-8 bg-gray-800">
       <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
         <div className="hidden sm:block sm:ml-6 h-20 w-20 animate-pulse">
-          <Image src={logo} />
+          <Image src={logo} alt='image' />
         </div>
 
         <div className=" flex items-center justify-center pl-5">
@@ -58,7 +58,7 @@ function Navbar() {
         </div>
 
         <div className="flex items-center float-right pl-28 ml-40">
-          <div className="ml-40">
+          <div className="">
             <Link href="/">
               <a className="mr-6">
                 <button className=" bg-gray-800 p-1 rounded-md text-gray-400 hover:text-white focus:outline-none  hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
