@@ -144,7 +144,7 @@ export default function Home() {
                     {truncate(nft.description, 10)}
                   </p>
                   <button
-                    className="bg-blue-500/0  text-black font-bold  rounded"
+                    className="bg-blue-500/0  text-white font-bold  rounded"
                     onClick={() => buyNFT(nft)}
                   >
                     Buy Now
